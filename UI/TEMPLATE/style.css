@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-color: aqua;
+}
+.header{
+    padding: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3e004ed3;
+}
+.header h1{
+    color: black;
+    font-size: 80px;
+}
+.top nav{
+    overflow: hidden;
+    background-color: crimson;
+    font-size: 50px;
+}
+.top nav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14 0x 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card{
+    background-color: #3e004ed3;
+    padding: 30px;
+    margin-top: 40px;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #3e004ed3;
+    color: black;
+    margin-top: 20px;
+}
