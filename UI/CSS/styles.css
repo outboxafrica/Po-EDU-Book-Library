@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+       
+    font-family: 'Padauk', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    
+    color: teal;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+h3 {
+    color: teal;
+    margin-bottom: 12px;
+}
+
+.flexed-book-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    width: 70vw;
+            
+}
+
+.book-container {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.book-design {
+    height: 8em;
+}
+
+footer {
+    background-color: lightslategray;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.book-container a {
+    text-decoration: none;
+    
+}
+
+.book-author {
+    margin-top: 8px;
+}
+
+h4 {
+    font-size: small;
+    
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+  
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 20px;
+    
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #524f4f;
+    font-size: 1.2em;
+}
+
+.nav-bar li:hover {
+    color: teal;
+    text-decoration: underline;
+}
+
+
+
+header {
+    background-color: lightsteelblue;
+    margin-bottom: 2em;
+}
+
+.word-only {
+    color: teal;
+    
+}
+
+.add-cart {
+    padding: 10px 10px;
+    margin: 7px 0px 20px 0px;
+    background-color: lightsteelblue;
+    border: none;
+    border-radius: 1em;
+}
+
