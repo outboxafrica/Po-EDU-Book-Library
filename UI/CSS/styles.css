@@ -243,3 +243,78 @@ footer {
     padding: 50px 50px;
     text-align: center;
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 2px solid teal;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    max-width: 80%;
+    padding: 2em 4em;
+    text-align: center;
+    color: teal;
+ 
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 1em;
+    color: teal;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 8;
+    pointer-events: none;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+}
+
+#modal-overlay.active {
+    
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1)
+}
+
+.checking-out {
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-style: none;
+    width: 100%;
+    text-align: right;
+    align-content: flex-end;
+    
+}
+
+.check-out {
+    background-color: teal;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    
+}
+
+.last-one {
+    color: teal;
+    font-size: 2em;
+}

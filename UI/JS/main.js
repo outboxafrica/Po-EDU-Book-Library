@@ -36,20 +36,20 @@ let books = [
         inCart: 0,
         tag: 'oliver-twist'
     },
-  /*   {
+    {
         title: 'Gods Bits of Wood',
         author: 'Ousmane Sembene',
         price: 30000,
         inCart: 0,
         tag: 'ousmane-sembene'
-    }, */
- /*    {
+    }, 
+    {
         title: 'Sons and Lovers',
         author: 'D H Lawrence',
         price: 28000,
         inCart: 0,
         tag: 'sons-lovers'
-    }, */
+    },
     {
         title: 'Kosiya Kifefe',
         author: 'Aurthur Gakwandi',
@@ -57,8 +57,6 @@ let books = [
         inCart: 0,
         tag: 'kosiya-kifefe'
     }
-
-
 ];
 
 function onCartNumbersLoad() {
@@ -74,7 +72,7 @@ for (let i = 0; i < eachCart.length; i++) {
     eachCart[i].addEventListener('click', () => {
         numberCarts(books[i]);
         totalCost(books[i]); 
-    })
+    });
 }
 
 function numberCarts (book) {
@@ -89,7 +87,7 @@ function numberCarts (book) {
     } else {
         localStorage.setItem('numbersBought', 1);
         document.querySelector('.cart span').textContent = 1;
-    }
+    };
 
     setItems(book);
     
@@ -136,6 +134,9 @@ function totalCost(sumProduct) {
 
 }
 
+
+
+
 function displayCart() {
     let cartItems = localStorage.getItem("booksInCart");
     cartItems = JSON.parse(cartItems);
@@ -174,13 +175,51 @@ function displayCart() {
             </h4>
         </div>       
         `
+
+        productContainer.innerHTML += `
+        <div class="checking-out">
+        <button id="modal-button" class = "check-out">Complete Transaction</button>
+        <i class="fa fa-shopping-cart last-one" aria-hidden="true"></i>
+        </div>
+
+        <div class="modal" id="modal">
+            <p>Thank you for Shopping with us!</p>
+            <a href="index.html"><button id="close-modal-button" class="close-button">&times;</button></a>
+        </div>  
+        
+        <div id="modal-overlay">
+
+        </div>
+                        
+        `
+             
         productContainer.innerHTML += `
         <div class="footer">
         <p>Edu Look-Book: Team 3 @2020</p>
         </div>
         `
-    }
-}
+        
+        
 
-onCartNumbersLoad();
+    }
+};
+
+
+
 displayCart();
+onCartNumbersLoad();
+
+const openModalButton = document.getElementById("modal-button");
+
+const overlay = document.getElementById('modal-overlay');
+
+openModalButton.addEventListener('click', () => {
+    const modal = document.getElementById("modal");
+    openModal(modal);
+});
+
+function openModal(modal) {
+    if (modal == null) return
+    modal.classList.add('active');
+    overlay.classList.add('active')
+}
