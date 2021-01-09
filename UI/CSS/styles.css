@@ -236,7 +236,7 @@ h1{
 
  .footer {
     width: 100vw;
-    background-color: lightslategray;
+    background-color: rgb(73, 90, 107);
     padding: 50px 50px;
     text-align: center;
 }
@@ -354,6 +354,6 @@ footer {
     
 }
 .homeContainer {
-    background-image: url('/MEDIA/mainBg.jpeg');
+    background-image: url('MEDIA/mainBg.jpeg');
     height: 100%;
 }
