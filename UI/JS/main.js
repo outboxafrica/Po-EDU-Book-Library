@@ -150,7 +150,7 @@ function displayCart() {
         productContainer.innerHTML +=  `
          <div class="books-cart">
             <i class="fa fa-window-close" aria-hidden="true"></i>
-            <img src="/UI/MEDIA/${item.tag}.jpg" class="book-design">
+            <img src="/MEDIA/${item.tag}.jpg" class="book-design">
             <span class="author">${item.author}</span>
         </div>
         <div class="book-cart-price">${item.price}</div>
@@ -184,7 +184,7 @@ function displayCart() {
 
         <div class="modal" id="modal">
             <p>Thank you for Shopping with us!</p>
-            <a href="index.html"><button id="close-modal-button" class="close-button">&times;</button></a>
+            <a href="homePage.html"><button id="close-modal-button" class="close-button">&times;</button></a>
         </div>  
         
         <div id="modal-overlay">
