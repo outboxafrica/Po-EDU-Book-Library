@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+body, html {
+       
+    font-family: 'Padauk', sans-serif;
+    height: 100%;
+}
+
+
+
+header {
+    background-image: url('/MEDIA/lib-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+
+nav h2 {
+    text-align: center;
+    
+    color: rgb(203, 221, 217);
+    margin-bottom: 1em;
+    font-family: 'Padauk', sans-serif;
+    
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10,10,10,0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.cart .fa-shopping-cart {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container
+ {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    width: 70vw;
+            
+}
+
+.book-design {
+    height: 8em;
+}
+
+.book-author {
+    margin-top: 8px;
+}
+
+.word-only {
+    color: teal;
+     
+}
+
+.add-cart {
+    padding: 10px 10px;
+    margin: 10px 2px 20px 2px;
+    background-color: lightsteelblue;
+    border: none;
+    border-radius: 1em;
+    display: inline-block;
+}
+
+.book-image {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.hiding-cart {
+    visibility: hidden;
+}
+
+.book-image:hover  .hiding-cart{
+    visibility: visible;
+}
+
+h1{
+    text-align: center;
+    color: teal;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.books-container
+{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.books-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+    border-bottom:  4px solid lightgray;
+    margin: 0 auto;
+}
+
+.cart-book-title {
+    width: 45%;
+}
+
+.book-price-home {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+
+.book-cart-price {
+    width: 15%;
+    border-bottom:  4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.books-total,
+.cart-total 
+{
+    width: 10%;
+    border-bottom:  4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.books-quantity,
+.book-cart-quantity
+ {
+    width: 30%;
+    border-bottom:  4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.books-cart {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+
+} 
+
+.cart-books {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom:  4px solid lightgray;
+    margin: 0 auto;
+}
+
+.basketTotalContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.book-price
+
+
+.fa-arrow-circle-left {
+    margin-right: 10px;
+}
+.fa-arrow-circle-right {
+    margin-left: 10px;
+ }
+
+ .fa-arrow-circle-left:before {
+     margin-right: 10px;
+ }
+
+ .footer {
+    width: 100vw;
+    background-color: lightslategray;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: lightslategray;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 2px solid teal;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    max-width: 80%;
+    padding: 2em 4em;
+    text-align: center;
+    color: teal;
+ 
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 1em;
+    color: teal;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 8;
+    pointer-events: none;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+}
+
+#modal-overlay.active {
+    
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1)
+}
+
+.checking-out {
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-style: none;
+    width: 100%;
+    text-align: right;
+    align-content: flex-end;
+    
+}
+
+.check-out {
+    background-color: teal;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    
+}
+
+.last-one {
+    color: teal;
+    font-size: 2em;
+}
+
+/* STYLES FOR THE LANDING PAGE */
+
+.featureBtns, .loginSection, .signupSection {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border: 2px solid teal;
+    border-radius: 10px;
+    z-index: 10;
+    background:rgba(255,255,255, 0.8);
+    padding: 5em 10em;
+    text-align: center;
+    color: teal;
+ 
+}
+
+.featureBtns p {
+    font-size: 2em;
+    white-space: nowrap;
+    padding-bottom: 1em;
+}
+
+.loginBtn, .signinBtn, .loginSbBtn, .signupSmBtn {
+    padding: 1em 2em;
+    margin: 1em;
+    background-color: teal;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+.homeContainer {
+    background-image: url('/MEDIA/mainBg.jpeg');
+    height: 100%;
+}
