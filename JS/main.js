@@ -150,7 +150,7 @@ function displayCart() {
         productContainer.innerHTML +=  `
          <div class="books-cart">
             <i class="fa fa-window-close" aria-hidden="true"></i>
-            <img src="/MEDIA/${item.tag}.jpg" class="book-design">
+            <img src="MEDIA/${item.tag}.jpg" class="book-design">
             <span class="author">${item.author}</span>
         </div>
         <div class="book-cart-price">${item.price}</div>

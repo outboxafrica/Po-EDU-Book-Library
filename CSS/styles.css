@@ -12,7 +12,7 @@ body, html {
 
 
 header {
-    background-image: url('/MEDIA/lib-cover.jpg');
+    background-image: url('../MEDIA/lib-cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -354,6 +354,6 @@ footer {
     
 }
 .homeContainer {
-    background-image: url('/MEDIA/mainBg.jpeg');
+    background-image: url(../MEDIA/mainBg.jpg);
     height: 100%;
 }
